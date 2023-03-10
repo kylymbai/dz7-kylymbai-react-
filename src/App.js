@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useState } from 'react'
 
-function App() {
+export default function App() {
+  const [color, setColor] = useState('red')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {color === 'red' && <div onClick={() => setColor('green')} className='block red'></div>}
+      {color === 'green' && <div onClick={() => setColor('red')} className='block green'></div>}
     </div>
-  );
+  )
 }
-
-export default App;

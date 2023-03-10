@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+}
+
+.red {
+  background-color: #f70000;
+}
+
+.green {
+  background-color: #00ea33;
+}
